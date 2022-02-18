@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.modal{
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0,0,0,0.8);
+		}
+		.modal-content{
+			background-color: #fefefe;
+			margin: 15% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+		}
+		.close{
+			color: #aaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+		#str{
+			background:#fa8b08; 
+			color:white;
+		}
+	</style>
+
+
+</head>
+<body>
+	<button id="myBtn">Таблица</button>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<center><table border="1"></center>
+	<tr id="str">
+		<th>Стаж работы</th>
+		<th>Размер базовой пенсии</th>
+	</tr>
+	<tr>
+		<th>нет стажа или стаж работы до 10 лет</th>
+		<th>54% или 18 23,0 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 11 лет</th>
+		<th>56% или 19 209,1 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 12 лет</th>
+		<th>58% или 19 895,1 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 13 лет</th>
+		<th>60% или 20 581,2 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 14 лет</th>
+		<th>62% или 21 276,2 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 15 лет</th>
+		<th>64% или 21 953,2 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 16 лет</th>
+		<th>66% или 22 639,3 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 17 лет</th>
+		<th>68% или 23 325,3 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 18 лет</th>
+		<th>70% или 24 011,4тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 19 лет</th>
+		<th>72% или 24 697,4 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 20 лет</th>
+		<th>74% или 25 383,4 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 21 год</th>
+		<th>76% или 26 069,5 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 22 года</th>
+		<th>78% или 26 755,5 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 23 года</th>
+		<th>80% или 27 441,6 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 24 года</th>
+		<th>82% или 28 127,6 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 25 лет</th>
+		<th>84% или 28 813,6 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 26 лет</th>
+		<th>86% или 29 499,7 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 27 лет</th>
+		<th>88% или 30 185,7 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 28 лет</th>
+		<th>90% или 30 871,8 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 29 лет</th>
+		<th>92% или 31 557,8 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 30 лет</th>
+		<th>94% или 32 243,8 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 31 год</th>
+		<th>96% или 32 929,8 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 32 года</th>
+		<th>98% или 33 615,9 тенге</th>
+	</tr>
+	<tr>
+		<th>стаж 33 и более лет</th>
+		<th>100% или 34 302 тенге</th>
+	</tr>
+</table>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript">
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("myBtn");
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+		modal.style.display = "block";
+	}
+	span.onclick = function(){
+		modal.style.display = "none";
+	}
+	window.onclick = function(event){
+		if(event.target == modal){
+			modal.style.display = "none";
+
+	}
+		}
+</script>
+</body>
+</html>
